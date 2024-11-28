@@ -13,5 +13,5 @@ const FILMS = [
 
 FILMS.forEach((film) => {
     const TEMPLATE = createFilmTemplate(film);
-    document.querySelector('#catalogue').appendChild(TEMPLATE);
+    document.querySelector('#catalogue .movie-grid').appendChild(TEMPLATE);
 });

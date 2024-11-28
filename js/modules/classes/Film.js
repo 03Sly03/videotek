@@ -1,14 +1,14 @@
 export class Film {
-    #name;
+    #title;
     #description;
 
-    constructor(name, description) {
-        this.#name = name;
+    constructor(title, description) {
+        this.#title = title;
         this.#description = description;
     }
 
-    get name() {
-        return this.#name;
+    get title() {
+        return this.#title;
     }
 
     get description() {
