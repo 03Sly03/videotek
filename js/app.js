@@ -15,3 +15,20 @@ FILMS.forEach((film) => {
     const TEMPLATE = createFilmTemplate(film);
     document.querySelector('#catalogue .movie-grid').appendChild(TEMPLATE);
 });
+
+const MOVIE_GRID_ELEMENT = document.querySelector('#catalogue .movie-grid');
+const OPTIONS = {
+    rootMargin : "0px",
+    threshold : 0.5
+};
+
+const OBSERVER = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting && entry.target === MOVIE_GRID_ELEMENT) {
+            MOVIE_GRID_ELEMENT.style.opacity = 1;
+            observer.unobserve(MOVIE_GRID_ELEMENT);
+        }
+    })
+}, OPTIONS)
+
+OBSERVER.observe(MOVIE_GRID_ELEMENT);
