@@ -25,7 +25,7 @@ const OPTIONS = {
 const OBSERVER = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
         if(entry.isIntersecting && entry.target === MOVIE_GRID_ELEMENT) {
-            MOVIE_GRID_ELEMENT.style.opacity = 1;
+            MOVIE_GRID_ELEMENT.style.opacity = '1';
             observer.unobserve(MOVIE_GRID_ELEMENT);
         }
     })
