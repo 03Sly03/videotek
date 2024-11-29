@@ -4,6 +4,8 @@ body {
     margin: 0;
     font-family: sans-serif;
     line-height: 1.5;
+    background-image: url("/images/backGroundImage.jpg");
+    color: white;
 }
 
 /* End - RESET */
@@ -53,3 +55,18 @@ body {
 }
 
 /* End - CATALOGUE */
+
+/* Start - ABOUT */
+
+.about {
+    background-color: rgb(255, 255, 255, 0.9);
+    border: 5px solid;
+    border-color: darkslategray;
+    border-radius: 50px;
+    text-align: center;
+    color: darkslategray;
+    margin: 30px;
+    padding: 50px;
+}
+
+/* End - ABOUT */
