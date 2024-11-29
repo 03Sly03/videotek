@@ -7,6 +7,8 @@ import { Film } from "/js/modules/classes/Film.js";
 const FILMS = [
     new Film('Star Wars', 'Un film de science fiction avec des sabres lasers'),
     new Film('Hitman', 'L\'asassin au crâne luisant vient réalise des assassinats pour le compte d\'une organisation secrète'),
+    new Film('Inception', 'Le film dans le film dans le film'),
+    new Film('Rambo 1', 'On pose son cerveau et on regarde les images. Un film réalisé en collaboration avec Michael Bay'),
 ];
 
 // Générer le contenu du catalogue
