@@ -1,0 +1,55 @@
+/* Start - RESET */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+/* End - RESET */
+
+/* Start - UTILITY CLASSES */
+
+.container-medium {
+    max-width: min(1000px, 100% - 30px);
+    margin-inline: auto;
+}
+
+/* End - UTILITY CLASSES */
+
+/* Start - CATALOGUE */
+
+.catalogue {
+    background: rgb(230, 230, 230);
+    padding: 20px;
+}
+
+.catalogue .section-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.catalogue .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    gap: 15px;
+
+    transition: opacity 1500ms;
+}
+
+.catalogue .movie {
+    --padding: 20px;
+
+    padding: var(--padding);
+    border: 1px solid black;
+    background-color: white;
+}
+
+.catalogue .movie__title {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: var(--padding);
+    margin: 0;
+}
+
+/* End - CATALOGUE */
