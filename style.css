@@ -151,6 +151,12 @@ body {
     --padding: 20px;
 }
 
+.catalogue .movie__img > img {
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
 @media screen and (min-width: 500px) {
     .catalogue .movie {
         display: grid;
@@ -160,12 +166,6 @@ body {
 
     .catalogue .movie__img  {
         grid-column: span 2;
-    }
-
-    .catalogue .movie__img > img {
-        max-height: 250px;
-        width: 100%;
-        object-fit: cover;
     }
 
     .catalogue .movie__content  {
