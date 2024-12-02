@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+.header {
+    position: relative;
+    height: 100vh;
+    background: url('/images/background.jpg') no-repeat center center/cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Ajout d'un voile foncé */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    border-color: #ffffff;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #8c3983, #feb47b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+
+.content {
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px #4A90E2, 0 0 10px #4A90E2, 0 0 20px #4A90E2;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #92add3;
+}
+
+.content button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background: #ff6600;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.content button:hover {
+    background: #ddab7d;
+}
+
+/* Start - RESET */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-image: url("/images/backGroundImage.jpg");
+    color: white;
+}
+
+/* End - RESET */
+
+/* Start - UTILITY CLASSES */
+
+.container-medium {
+    max-width: min(1000px, 100% - 30px);
+    margin-inline: auto;
+}
+
+/* End - UTILITY CLASSES */
+
+/* Start - CATALOGUE */
+
+.catalogue {
+    background: rgb(230, 230, 230);
+    padding: 20px;
+}
+
+.catalogue .section-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.catalogue .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    gap: 15px;
+
+    transition: opacity 1500ms;
+}
+
+.catalogue .movie {
+    --padding: 20px;
+
+    padding: var(--padding);
+    border: 1px solid black;
+    background-color: white;
+}
+
+.catalogue .movie__title {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: var(--padding);
+    margin: 0;
+}
+
+/* End - CATALOGUE */
+
+/* Start - ABOUT */
+
+.about {
+    background-color: rgb(255, 255, 255, 0.9);
+    border: 5px solid;
+    border-color: darkslategray;
+    border-radius: 50px;
+    text-align: center;
+    color: darkslategray;
+    margin: 30px;
+    padding: 50px;
+}
+
+/* End - ABOUT */
