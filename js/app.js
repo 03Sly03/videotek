@@ -1,21 +1,21 @@
-import { createFilmTemplate } from "/js/modules/functions.js";
 import { Film } from "/js/modules/classes/Film.js";
 
 // créer une simulation de catalogue
 
+const FILMS_CONTAINER = document.querySelector('.movie-grid');
+
 /** @type { Film[] } */
 const FILMS = [
-    new Film('Star Wars', 'Un film de science fiction avec des sabres lasers'),
-    new Film('Hitman', 'L\'asassin au crâne luisant vient réalise des assassinats pour le compte d\'une organisation secrète'),
-    new Film('Inception', 'Le film dans le film dans le film'),
-    new Film('Rambo 1', 'On pose son cerveau et on regarde les images. Un film réalisé en collaboration avec Michael Bay'),
+    new Film('Star Wars', 'Un film de science fiction avec des sabres lasers', FILMS_CONTAINER, '/images/background.jpg'),
+    new Film('Hitman', 'L\'asassin au crâne luisant vient réalise des assassinats pour le compte d\'une organisation secrète', FILMS_CONTAINER),
+    new Film('Inception', 'Le film dans le film dans le film', FILMS_CONTAINER),
+    new Film('Rambo 1', 'On pose son cerveau et on regarde les images. Un film réalisé en collaboration avec Michael Bay', FILMS_CONTAINER),
 ];
 
 // Générer le contenu du catalogue
 
 FILMS.forEach((film) => {
-    const TEMPLATE = createFilmTemplate(film);
-    document.querySelector('#catalogue .movie-grid').appendChild(TEMPLATE);
+    film.display();
 });
 
 const MOVIE_GRID_ELEMENT = document.querySelector('#catalogue .movie-grid');
