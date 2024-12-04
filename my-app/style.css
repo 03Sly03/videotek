@@ -18,6 +18,11 @@
     background: url('/images/background.jpg') no-repeat center center/cover;
 }
 
+.contact {
+    background-color: black;
+    background-repeat: repeat;
+}
+
 .overlay {
     position: absolute;
     top: 0;
