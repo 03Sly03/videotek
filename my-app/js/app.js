@@ -1,16 +1,14 @@
-import { Film } from "/js/modules/classes/Film.js";
-
 // créer une simulation de catalogue
 
 const FILMS_CONTAINER = document.querySelector('.movie-grid');
 
-/** @type { Film[] } */
-const FILMS = [
-    new Film('Star Wars', 'Un film de science fiction avec des sabres lasers', FILMS_CONTAINER, '/images/background.jpg'),
-    new Film('Hitman', 'L\'asassin au crâne luisant vient réalise des assassinats pour le compte d\'une organisation secrète', FILMS_CONTAINER),
-    new Film('Inception', 'Le film dans le film dans le film', FILMS_CONTAINER),
-    new Film('Rambo 1', 'On pose son cerveau et on regarde les images. Un film réalisé en collaboration avec Michael Bay', FILMS_CONTAINER),
-];
+/** @type { Films[] } */
+let films = [];
+async function afficherFilms() {
+    const reponse = await fetch("http://example.com/films.json");
+    films = await reponse.json();
+    console.log(films);
+  }
 
 // Générer le contenu du catalogue
 
