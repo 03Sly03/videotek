@@ -1,4 +1,4 @@
-import { Film } from "/js/modules/classes/Film.js";
+import { Film } from "./modules/classes/Film.js";
 
 // créer une simulation de catalogue
 
