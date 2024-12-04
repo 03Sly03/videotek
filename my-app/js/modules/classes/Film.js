@@ -5,7 +5,7 @@ export class Film {
     /** @type { string } */
     #description;
 
-    /** @type { string|null } */
+    /** @type { string } */
     #imgSrc;
 
     /** @type { HTMLElement } */
@@ -13,7 +13,7 @@ export class Film {
 
     /** 
      * @param { string } title
-     * @param { string } description
+     * @param { string } descripton
      * @param { string|null } imgSrc
      * @param { HTMLElement } container
     */
@@ -41,7 +41,7 @@ export class Film {
     
         DIV.innerHTML = `
             <div class="movie__img">
-                <img src="${ this.#imgSrc ?? '' }" alt="Affiche du film : ${ this.#title }">
+                <img src="{ this.#imgSrc ?? '' }" alt="Affiche du film : { this.#title }">
             </div>
             <div class="movie__content">
                 <h3 class="movie__title"></h3>
@@ -56,8 +56,8 @@ export class Film {
     display() {
         const TEMPLATE = this.#createTemplate();
 
-        TEMPLATE.querySelector('.movie__title').textContent = this.#title;
-        TEMPLATE.querySelector('.movie__description').textContent = this.#description;
+        TEMPLATE.querySelector('.movie__title').textContent = this.title;
+        TEMPLATE.querySelector('.movie__description').textContent = this.description;
 
         this.#container.insertAdjacentElement('afterbegin', TEMPLATE);
     }

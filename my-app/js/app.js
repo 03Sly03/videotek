@@ -14,10 +14,6 @@ const FILMS = [
 
 // Générer le contenu du catalogue
 
-FILMS.forEach((film) => {
-    film.display();
-});
-
 const MOVIE_GRID_ELEMENT = document.querySelector('#catalogue .movie-grid');
 const OPTIONS = {
     rootMargin : "0px",
