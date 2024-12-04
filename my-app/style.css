@@ -122,14 +122,8 @@ body {
 /* Start - CATALOGUE */
 
 .catalogue {
-    background: radial-gradient(rgb(68, 0, 110), rgb(41, 0, 41));
+    background: radial-gradient(rgb(146, 144, 40), rgb(172, 99, 99));
     padding-block: 50px;
-}
-
-.catalogue > div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 15px;
 }
 
 .catalogue .section-title {
