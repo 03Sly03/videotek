@@ -14,8 +14,8 @@
 
 .header {
     position: relative;
-    height: 90vh;
-    background: url('./images/background.jpg') repeat center center/cover;
+    height: 100vh;
+    background: url('/images/background.jpg') no-repeat center center/cover;
 }
 
 .overlay {
@@ -33,7 +33,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: right;
+    align-items: center;
     padding: 20px 50px;
 }
 
@@ -58,10 +58,12 @@
 
 .logo {
     font-family: 'Playfair Display', serif;
-    font-size: 5rem;
-    font-weight: extra-bold;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #8c3983, #feb47b);
     -webkit-background-clip: text;
     background-clip: text;
+    color: transparent; 
 }
 
 .content {
@@ -102,7 +104,7 @@ body {
     margin: 0;
     font-family: sans-serif;
     line-height: 1.5;
-    background-image: url("./images/backGroundImage.jpg");
+    background-image: url("/images/backGroundImage.jpg");
     color: white;
 }
 
